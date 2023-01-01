@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 15px;
+}
+
+.brand img {
+    width: 45px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    min-height: 72vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    margin: 15px auto;
+    border-radius: 10px;
+    padding: 20px 30px;
+    font-family: 'Varela Round', sans-serif;
+    background-image: url("bg.jpg");
+    background-size: cover;
+}
+
+.bottom {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130px;
+    background-color: black;
+    color: white;
+}
+
+.bottom input {
+    cursor: pointer;
+}
+
+.icons {
+    margin-top: 15px;
+}
+
+.icons i {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+
+#myProgressBar {
+    width: 80vw;
+}
+
+.songItemContainer {
+    margin-top: 70px;
+}
+
+.songItem {
+    height: 50px;
+    margin-top: 15px;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.songItem img {
+    width: 43px;
+    margin: 0 20px;
+    border-radius: 30px;
+}
+
+.timestamp {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.timestamp i {
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.songDetails {
+    position: absolute;
+    font-family: 'Varela Round', sans-serif;
+    left: 10vw;
+}
+
+.songDetails img {
+    width: 3vw;
+    margin-right: 10px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.songItemPlay {
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.songItemPlay:hover {
+    transform: scale(1.3);
+}
